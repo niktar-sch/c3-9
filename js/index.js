@@ -37,6 +37,7 @@ if (checksJSON) {
 	const checksDict = JSON.parse(checksJSON);
 	for (let check of checksInps) {
 		check.checked = checksDict[check.id];
+		check.disabled = true;
 	}
 }
 
@@ -44,9 +45,9 @@ btnSave.addEventListener('click', () => {
 	const checksDict = {};
 	for (let check of checksInps) {
 		checksDict[check.id] = check.checked;
+		check.disabled = true;
 	}
 	const checksJ = JSON.stringify(checksDict);
-
 	localStorage.setItem('checks', checksJ);
-	console.log(localStorage.getItem('checks'));
+	btnSave.disabled = true;
 });
