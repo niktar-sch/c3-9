@@ -9,14 +9,30 @@
 </head>
 <body>
 
-	<div >
+	<div>
 		<h3>Город</h3>
 		<hr>
-		<div>
+		<div id="cityform">
 			<label>Ваш город: <input type="text" id="city" size="40"></label>
 		</div>
 	</div>
 
+	<br><br>
+
+	<div>
+		<h3>Предпочтения</h3>
+		<hr>
+		<div>
+			<label><input type="checkbox" id="not_call"> не звонить мне</label>
+			<label><input type="checkbox" id="use_service"> я прочитал и согласен с правилами пользования сервисом</label>
+			<label><input type="checkbox" id="not select"> я не выбираю эту галочку</label>
+			<label><input type="checkbox" id="conf_freedom"> я подтверждаю, что свобода в интернете — это возможность выбирать галочки</label>
+			<label><input type="checkbox" id="over_12"> мне больше 12 лет</label>
+			<label><input type="checkbox" id="task_corr"> это задание выполнено правильно</label>
+			<br>
+			<button type="button" class="btn btn-primary" id="save">Сохранить</button>
+		</div>
+	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
